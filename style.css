@@ -1,0 +1,158 @@
+body{
+    background-color: yellow;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+td{
+    vertical-align: bottom;
+}
+
+.box{
+    width: 60px;
+    height: 70px;
+    border: 1px solid black;
+    background-color: teal;
+    padding: 25px;
+    margin: 40px 40px 20px 40px;
+    transform: skewX(20deg);
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-name: case1;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes case1 {
+    form{
+        transform: skewX(20deg);
+    }
+    to{
+        transform: skew(-20deg);
+    }
+}
+
+
+.box1{
+    width: 60px;
+    height: 70px;
+    border: 1px solid black;
+    background-color: palevioletred;
+    padding: 25px;
+    margin: 40px 40px 20px 40px;
+    transform: skewY(20deg);
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-name: case2;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+
+@keyframes case2{
+    from{
+        transform: skewY(20deg)
+    }
+    to{
+        transform: skewY(-20deg);
+    }
+}
+
+.box2{
+    width: 60px;
+    height: 70px;
+    border: 1px solid black;
+    background-color: teal;
+    padding: 25px;
+    margin: 40px 40px 20px 40px;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-name: case3;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    
+}
+
+@keyframes case3{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.box3{
+    width: 60px;
+    height: 70px;
+    border: 1px solid black;
+    padding: 25px;
+    margin: 40px 40px 20px 40px;
+}
+
+.k{
+    background-color: teal;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-name: case4;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes case4{
+    from{
+        transform: scaleY(1);
+    }
+    to{
+        transform: scaleY(.5);
+    }
+}
+
+.b{
+    background-color: sienna;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-name: case5;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes case5{
+    from{
+        transform: scaleX(1);
+    }
+    to{
+        transform: scaleX(.5);
+    }
+}
+
+.c{
+    background-color: green;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-name: case6;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+
+@keyframes case6{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(100deg);
+    }
+}
+
+/* anchor tag */
+
+a{
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    left: 38%;
+}
